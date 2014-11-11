@@ -1,0 +1,73 @@
+
+#topnav{
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+	font-size:13px;
+	font-weight:normal;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	}
+
+#topnav ul, #topnav li{
+	float:left;
+	list-style:none;
+	margin:0;
+	padding:0;
+	}
+
+/*Navbar normal display */
+#topnav li a:link, #topnav li a:visited{
+	display:block;
+	margin:0;
+	padding:20px;
+	color:#FFFFFF;
+	text-transform:uppercase;
+	}
+
+/*Navbar hover and active state */
+#topnav li a:hover,#topnav ul li.active a{
+	color:#FFFFFF;
+  background-color:rgba(0,0,0,.3);
+}
+
+/* dropdown  bg*/	
+#topnav li li a:link, #topnav li li a:visited{
+	width:150px;
+	float:none;
+	margin:0;
+	padding:7px 10px;
+	font-size:12px;
+	font-weight:normal;
+	color:#FFFFFF;
+	text-transform:none;
+  background-color:rgba(0,0,0,.3);
+	}
+	
+/*  dropdown hover*/
+#topnav li li a:hover{
+	color:#FFFFFF;
+	background-color:#000000;
+	text-transform:none;
+  }
+
+#topnav li ul{
+	z-index:9999;
+	position:absolute;
+	left:-999em;
+	height:auto;
+	width:170px;
+	border:1px solid #939686;
+	}
+
+#topnav li ul a{width:140px;}
+
+#topnav li ul ul{margin:-32px 0 0 0;}
+
+#topnav li:hover ul ul{left:-999em;}
+
+#topnav li:hover ul, #topnav li li:hover ul{left:auto;}
+
+#topnav li:hover{position:static;}
+
+#topnav li.last{margin:0;}

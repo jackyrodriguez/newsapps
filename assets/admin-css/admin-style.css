@@ -1,0 +1,317 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+  background: url('../img/fabric_of_squares_gray.png');
+}
+
+/*
+ * Create dark grey header with a white logo
+ */
+header {
+  background-color: #2B2B2B;
+  height: 40px;
+  width: 100%;
+  opacity: .9;
+}
+.hd-line {
+  height: 10px;
+  width: 100%;
+  background-color: #6D7579;
+  margin-bottom: 10px;  
+}
+
+header h1.logo {
+  margin-top: 4px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  float: left;
+}
+ 
+header h1.logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+ 
+/*
+ * Center the body content
+*/
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+/*
+ * Display navigation links inline
+ */
+.menu {
+  float: right;
+  margin-top: 12px;
+}
+ 
+.menu li {
+  display: inline;
+}
+ 
+.menu li + li {
+  margin-left: 35px;
+}
+ 
+.menu li a {
+  color: #D8D8F1;
+  text-decoration: none;
+}
+
+div.jumbo {
+  padding: 10px 0 30px 0;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  text-align: center;
+}
+/***********************/
+
+/* Message flashing */
+.flash {
+  background-color: #FBB0B0;
+  padding: 10px;
+  width: 400px;
+  margin: 0 auto;  
+}
+
+/***********************/
+
+/* use in login */
+form label {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  padding: 10px 0;
+}
+
+.login-title {
+  font-size: 3em;
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+/* Botton wrapper login */
+.btn-wrapr {
+  /*position: relative;
+  left: 440px; */
+  display: inline-block;
+  margin-top:20px;
+}
+ 
+/*  use in login  */
+.container-login {
+  width: 940px;
+  margin: 0 auto;
+  padding-bottom:30px;
+  text-align: center;
+}
+/*  use in login  */
+form input#password,#email{
+  width: 300px;
+  background-color: #fafafa;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+form input#email {
+  margin-bottom: 30px;
+}
+ 
+form input#password {
+  margin-bottom: 10px;
+}
+
+
+/*********** use everywhere *********/
+
+form input#submit {
+  display: block;
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  border:1px solid #d8d8d8;
+  padding: 10px; 
+  font-weight:bold; 
+  text-align: center; 
+  color: #000000; 
+  background-color: #f4f4f4;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f4f4), color-stop(100%, #e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f4f4f4, #e5e5e5);
+  background-image: -moz-linear-gradient(top, #f4f4f4, #e5e5e5);
+  background-image: -ms-linear-gradient(top, #f4f4f4, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f4f4f4, #e5e5e5);
+  background-image: linear-gradient(top, #f4f4f4, #e5e5e5);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f4f4f4, endColorstr=#e5e5e5);
+}
+ 
+form input#submit:hover{
+  cursor: pointer;
+  border:1px solid #c1c1c1; 
+  background-color: #dbdbdb;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dbdbdb), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(top, #dbdbdb, #cccccc);
+  background-image: -moz-linear-gradient(top, #dbdbdb, #cccccc);
+  background-image: -ms-linear-gradient(top, #dbdbdb, #cccccc);
+  background-image: -o-linear-gradient(top, #dbdbdb, #cccccc);
+  background-image: linear-gradient(top, #dbdbdb, #cccccc);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#dbdbdb, endColorstr=#cccccc);
+}
+
+/********************************** */
+
+/* FORM CSS - CRUD */
+
+/* for name or title of a form */
+.form-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0 30px 0;
+}
+/* simply wrapper of the form */
+.form-container {
+  margin: 10px 0 15px 0;
+  padding: 10px 0 30px 0;
+    background-color: #eeeeee;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+}
+/* ul  */
+.frm-ul{
+  list-style:none;
+}
+/* ul span  */
+.frm-ul-spn{
+  width:120px;  
+  float:left;
+  display:block;
+}
+/* ul div */
+.frm-ul-div{
+  float:left;
+}
+/* ul-li */
+.frm-li{
+  margin-bottom: 20px;
+}
+    
+/* span .. Error message in form */
+.err{
+  color:red;
+  font-size:10px;
+}
+/* url error message */
+.err-msg {
+  font-size:15px; color:red; font-weight: bold;
+}
+/* label small size */
+.frm-sml-lbl { 
+  font-size:10px;
+  display: inline-block;
+}
+
+.frm-main select,
+.frm-main input {
+  width: 300px;
+  background-color: #fafafa;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  font-size: 1.1em;
+}
+.frm-main textarea {
+  width: 370px;
+  max-width: 600px;
+  max-height: 280px;
+  height: 140px;
+  background-color: #fafafa;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #cccccc;
+  /*margin-bottom: 10px;*/
+  padding: 5px;
+  font-size: 1.1em;
+}
+.frm-main input[type="submit"]{
+  width: 200px;
+}
+
+/******** USE IN TABLE ********/
+
+  /* ul */
+  #records{
+    list-style:none;
+    float:left;
+
+    padding: 5px 5px 7px 5px;
+    border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    background: #483353;
+  }
+
+  /* ul span */
+  #records span{
+    float:left;
+    display:block;
+    padding: 0 0 0 10px;
+  }
+
+  /* first li */
+  #records-head{
+    font-weight:bold;
+    background:#483353;
+    color:#FFF;
+    line-height:30px;
+  }
+
+  /* ul li */
+  #records li{
+    float:left;
+  }
+  
+  /* li */
+  .row0{
+    background:#8E909B;
+    color:#FFF;
+  }
+  /* li */
+  .row1 {
+    background: #DBDFE0
+  }
+  .row0, .row1{
+    padding: 5px 0 5px 0;
+  }
+  .row0 a, .row1 a{
+    text-decoration:none;
+  }
+  .row0 a:hover, .row1 a:hover{
+    text-decoration:underline;
+  }
+  .row0 a{color:#FFF;}
+  .row1 a{color:#000;}
+
+  /* class of span */
+  .title{width:150px;}
+  .category{width:80px;}
+  .reldate{width:150px;}
+  .desc{width:260px;}
+  .created{width:110px;}
+  .modify{width:110px;}
+  .action{width:100px;}
+
